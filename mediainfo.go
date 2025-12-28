@@ -1,8 +1,10 @@
 package mediainfo
 
 /*
-#cgo linux LDFLAGS: -ldl
+#cgo LDFLAGS: -lmediainfo
 #cgo darwin LDFLAGS: -framework CoreFoundation
+#cgo openbsd CFLAGS: -I/usr/local/include
+#cgo openbsd LDFLAGS: -L/usr/local/lib
 #include <stdlib.h>
 #include "wrapper/mediainfo.c"
 */
@@ -76,10 +78,6 @@ func emptyCString() *C.char {
 
 // ErrOpenFailed is returned by Open when mediainfo cannot open the file.
 var ErrOpenFailed = errors.New("file open failed")
-
-func init() {
-	C.MediaInfoDLL_Load()
-}
 
 // New initializes a MediaInfo handle.
 func New() *MediaInfo {

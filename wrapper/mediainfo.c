@@ -1,4 +1,4 @@
-#include "MediaInfoDLL.h"
+#include <MediaInfoDLL/MediaInfoDLL_Static.h>
 
 static inline void* g_MediaInfo_New() {
   void *mi = MediaInfo_New();
