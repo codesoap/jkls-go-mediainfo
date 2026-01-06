@@ -15,7 +15,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/jkl1337/go-mediainfo"
+	"github.com/codesoap/jkls-go-mediainfo"
 )
 
 func main() {

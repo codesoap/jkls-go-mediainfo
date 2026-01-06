@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/jkl1337/go-mediainfo"
+	"github.com/codesoap/jkls-go-mediainfo"
 	"log"
 	"os"
 	"strconv"

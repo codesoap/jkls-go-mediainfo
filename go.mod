@@ -1,3 +1,3 @@
-module github.com/jkl1337/go-mediainfo
+module github.com/codesoap/jkls-go-mediainfo
 
 go 1.24
